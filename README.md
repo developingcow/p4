@@ -2,6 +2,8 @@ Group Members: Hong
 
 https://github.com/developingcow/p4
 
+![Blank diagram (1)](https://github.com/developingcow/p4/assets/155276353/413a99e1-738d-4c2b-b6fd-fb6a0c4ea5d8)
+
 
 This repo is a simple docker compose app comprising of 2 containers which lets you click on a button and shows how many it has been clicked so far.
 
