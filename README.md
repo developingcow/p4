@@ -21,4 +21,4 @@ docker buildx build --platform linux/amd64,linux/arm64 --push -t <repo> .
 The steps above will push the image to DockerHub <repo> specified.
 
 To deploy the app, simply do `docker compose up` in the root folder, 
-the images specified in the docker compose files are `hkow/clickfrontend` and `hkow/backend`, but you can change it to your own
+the images specified in the docker compose yaml are `hkow/clickfrontend` and `hkow/backend`, but you can change it to your own
