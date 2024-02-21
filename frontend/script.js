@@ -1,5 +1,5 @@
 document.getElementById('clickButton').addEventListener('click', function () {
-    fetch('http://localhost:3000/click', { method: 'POST' })
+    fetch('backend/click', { method: 'POST' })
         .then(response => response.text())
         .then(data => {
             document.getElementById('clickCount').innerText = data;
@@ -8,7 +8,7 @@ document.getElementById('clickButton').addEventListener('click', function () {
 });
 
 function fetchClickCount() {
-    fetch('http://localhost:3000/count')
+    fetch('backend/count')
         .then(response => response.text())
         .then(data => {
             document.getElementById('clickCount').innerText = data;

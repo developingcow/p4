@@ -1,10 +1,16 @@
+version: '3'
+
 services:
   backend:
     image: hkow/clickbackend
-    ports: [ "3000:3000" ]
+    expose:
+      - "3000"
 
   frontend:
     image: hkow/clickfrontend
-    ports: [ "80:80" ]
+    ports:
+      - "80:80"
     depends_on:
       - backend
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro # Nginx configuration file
